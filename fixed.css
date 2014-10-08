@@ -1,0 +1,9 @@
+/* fix兼容 */
+
+.fixed{
+  position:fixed;
+  _position:absolute;
+   left:170px;
+   top:160px;
+  _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+}
