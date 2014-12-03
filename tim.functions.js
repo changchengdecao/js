@@ -17,3 +17,10 @@ function getQuery(para){
 	 } 
 	 return null; 
  }
+ 
+ function bandScript(src){
+ 	var bdsharejs = document.createElement("script");
+	bdsharejs.id = "bdsharejs";
+	bdsharejs.src = src;
+	(document.getElementsByTagName('head')[0]||body).appendChild(bdsharejs);
+ }
